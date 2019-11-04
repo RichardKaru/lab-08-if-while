@@ -10,10 +10,15 @@
       document.write("Let's party...<br>");
       var waitstr = prompt("How long until the party?");
       var wait = parseInt(waitstr);
+      if (wait<1) {
+      console.log("PARTY NOW!!!");
+      document.write("PARTY NOW!!!<br>");
+    } else {
       for (i=wait; i>=1; i=i-1) {
       console.log(i);
       document.write(i+"<br>");
       }
+    }
       console.log("TIME TO PARTY!!!");
       document.write("TIME TO PARTY!!!");
     </script>
